@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- This is the container box for where all its contents inside it converts 20C to Fahrenheit and Kelvin -->
+    <div class="container-box">
+        <h2 class="text-primary">Temperature Converter</h2>
+        <img src="tempe.png" width="100" alt="Thermometer">
+
+        <!-- This is the container box for where we have 20C as our given and the answers in Fahrenheit and Kelvin -->
+        <div class="output-box">
+            <p><strong>THE GIVEN:</strong> <span id="givenValue">20°C</span></p>
+            <p><strong>THE ANSWER:</strong> <span id="answer"></span></p>
+        </div>
+
+        <!-- Fahrenheit conversion: Formula (C × 1.8) + 32 -->
+        <button type="button" class="btn btn-custom" onclick="var h=20; var a = (h * 1.8) + 32; var round_a = a.toFixed(2); document.getElementById('answer').innerHTML =round_a + ' °F';">FAHRENHEIT</button>
+
+        <!-- Kelvin conversion: Formula C + 273.15 -->
+        <button type="button" class="btn btn-custom" onclick="var h=20; var b=273.15; var a = h + b; var round_b = a.toFixed(2); document.getElementById('answer').innerHTML =round_b + ' K';">KELVIN</button>
+
+        <!-- Refresh button to reload the page -->
+        <button type="button" class="btn btn-custom" onclick="window.location.reload()">REFRESH</button>
+    </div>
+
+</body>
+</html>

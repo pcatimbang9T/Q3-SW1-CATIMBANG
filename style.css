@@ -1,0 +1,32 @@
+body {
+    background-color: #FBF5DD;
+    text-align: center;
+}
+
+.container-box {
+    background-color: #A6CDC6;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.output-box {
+    background-color: #DDA853;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-custom {
+    background-color: #16404D;
+    color: white;
+    border: none;
+    margin: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #007bb5;
+}
+
